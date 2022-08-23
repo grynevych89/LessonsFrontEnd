@@ -1,3 +1,4 @@
-const questionOne = prompt('Введите первое число');
-const questionTwo = prompt('Введите второе число');
-alert(questionResult = Number(questionOne) + Number(questionTwo));
+const answerOne = prompt('Введите первое число');
+const answerTwo = prompt('Введите второе число');
+result = Number(answerOne) + Number(answerTwo)
+alert(answerOne + " + " + answerTwo + " = " + result);
