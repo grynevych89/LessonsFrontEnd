@@ -23,7 +23,7 @@ alert(numberOne + ' ' + chooseOperand + ' ' + numberTwo + ' = ' + result);
 
 function isInvalid(str) {
     return str === null || str.trim() === '' || isNaN(str);
-};
+}
 
 function isSymvol(str) {
     switch(str) {
@@ -32,5 +32,5 @@ function isSymvol(str) {
         case '*': return false;
         case '=': return false;
         default: return true;
-    };
-};
+    }
+}
