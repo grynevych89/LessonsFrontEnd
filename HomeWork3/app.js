@@ -13,7 +13,7 @@ do {
 } while (isInvalid(numberTwo));
 
 switch (chooseOperand) {
-    case '+' : result = numberOne + numberTwo; break;
+    case '+' : result = Number(numberOne) + Number(numberTwo); break;
     case '-' : result = numberOne - numberTwo; break;
     case '*' : result = numberOne * numberTwo; break;
     case '/' : result = numberOne / numberTwo; break;
