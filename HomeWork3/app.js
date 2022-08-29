@@ -4,6 +4,8 @@ do {
     numberOne = prompt('Введите первое число');
 } while (isInvalid(numberOne));
 
+numberOne = Number(numberOne);
+
 do {
     chooseOperand = prompt('Введите действие: +, -, * или /');
 } while (isSymvol(chooseOperand));
@@ -12,8 +14,10 @@ do {
     numberTwo = prompt('Введите второе число');
 } while (isInvalid(numberTwo));
 
+numberTwo = Number(numberTwo);
+
 switch (chooseOperand) {
-    case '+' : result = Number(numberOne) + Number(numberTwo); break;
+    case '+' : result = numberOne + numberTwo; break;
     case '-' : result = numberOne - numberTwo; break;
     case '*' : result = numberOne * numberTwo; break;
     case '/' : result = numberOne / numberTwo; break;
