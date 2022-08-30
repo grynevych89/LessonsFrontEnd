@@ -18,11 +18,14 @@ let odd = 0;
 for (let k = 1; k <= number; k++) {
     k % 2==0 ? even += k : odd += k;
     // if (k % 2 == 0) {
-    //     chet +=k;
+    //     even +=k;
     // } else {
-    //     nechet +=k;
+    //     odd +=k;
     // }
 }
 
-console.log(even);
-console.log(odd);
+alert(`
+Введенное Вами число: ${number}
+Сумма четных чисел: ${even}
+Сумма не четных чисел: ${odd}
+`);
