@@ -16,12 +16,12 @@ let even = 0;
 let odd = 0;
 
 for (let k = 1; k <= number; k++) {
-    k % 2==0 ? even += k : odd += k;
-    // if (k % 2 == 0) {
-    //     even +=k;
-    // } else {
-    //     odd +=k;
-    // }
+    // k % 2==0 ? even += k : odd += k;
+    if (k % 2 == 0) {
+        even +=k;
+    } else {
+        odd +=k;
+    }
 }
 
 alert(`
