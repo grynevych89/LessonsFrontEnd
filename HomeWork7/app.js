@@ -21,7 +21,7 @@ const students = [
     },
 ];
 
-const AverageResults = (
+const averageResults = (
     (`Средний бал студента ${students[0].name}: `) + calculateStudentAverageMark(0) + 
     (`\nСредний бал студента ${students[1].name}: `) + calculateStudentAverageMark(1) +
     (`\nСредний бал студента ${students[2].name}: `) + calculateStudentAverageMark(2) +
@@ -48,7 +48,7 @@ function calculateGroupAverageMark(students){
     return getAverage(arr);
 }
 
-console.log(AverageResults);
+console.log(averageResults);
 
 
 // Вариант №2 (Вывод в консоль будет меньше)
