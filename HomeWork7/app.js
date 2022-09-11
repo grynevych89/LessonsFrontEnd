@@ -49,3 +49,29 @@ function calculateGroupAverageMark(students){
 }
 
 console.log(AverageResults);
+
+
+// Вариант №2 (Вывод в консоль будет меньше)
+
+// function getAverage (val){
+//     let marksCalc = val.reduce((acc,item) => acc+item);
+//     let averageMark = marksCalc / val.length;
+//     return averageMark;
+// }
+
+// function calculateStudentAverageMark(student){
+//     return getAverage(student.marks);
+// }
+
+// function calculateGroupAverageMark(students){
+//     let arr = [];
+//     for (let i = 0; i < students.length; i++){
+//         arr = arr.concat(students[i].marks);
+//     }
+//     return getAverage(arr);
+// }
+
+// students.forEach(element => console.log(
+//     `Средний бал студента ${element.name}: ` + calculateStudentAverageMark(element))
+//     );
+// console.log('Средний бал всех студентов группы: ' + calculateGroupAverageMark(students));
